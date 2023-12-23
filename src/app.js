@@ -7,5 +7,8 @@ const subscribersRoute = require("./routes/subscribersRoute");
 // Your code goes here
 
 app.use("/", subscribersRoute);
+app.use((req, res, next) => {
+  res.status(404).send("Not found");
+});
 
 module.exports = app;
