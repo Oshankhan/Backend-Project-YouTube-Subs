@@ -6,7 +6,7 @@ const path = require("path");
 
 // API to render html file
 exports.homePage = (req, res) => {
-  res.sendFile(path.join(__dirname, "../view/index.html"));
+  res.sendFile(path.join(__dirname, "../index.html"));
 }
 
 // API to create a subscriber
