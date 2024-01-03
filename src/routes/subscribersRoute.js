@@ -22,6 +22,6 @@ router.route("/subscribers").get(getAllSubs);
 router.route("/subscribers/name").get(nameOfSubs);
 
 // route to view suscriber by id
-router.route("/sub/:id").get(getSingleSub);
+router.route("/subscribers/:id").get(getSingleSub);
 
 module.exports = router;
