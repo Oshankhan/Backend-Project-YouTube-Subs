@@ -9,12 +9,11 @@ Key Features:
 1.API Integration:
 
 The project seamlessly integrates with the YouTube API to fetch subscriber data for a given channel.
-Utilizes OAuth 2.0 authentication for secure and authorized access to YouTube's resources.
 
 2.Data Storage and Management:
 
 Implements a structured database to store subscriber details efficiently.
-Utilizes relational databases like MySQL or PostgreSQL to ensure data consistency and integrity.
+Utilizes Mongodb non-relational database to ensure data consistency and integrity.
 
 3.Real-time Updates:
 
@@ -26,32 +25,18 @@ Implements scheduled tasks or webhooks to maintain up-to-date subscriber informa
 Designed with scalability in mind to handle a growing number of channels and subscribers.
 Implements load balancing and distributed architecture for optimal performance.
 
-5.Caching Mechanism:
-
-Implements caching strategies to reduce API calls and improve response times.
-Utilizes a caching layer, such as Redis, to store frequently requested subscriber data.
-
-6.Error Handling and Logging:
+5.Error Handling and Logging:
 
 Incorporates a robust error-handling mechanism to gracefully manage API errors and interruptions.
 Logs relevant information for debugging, monitoring, and performance optimization.
 
-7.Security:
+6.Security:
 
 Ensures secure communication with the YouTube API by implementing HTTPS.
 Follows best practices for API key management and access control to prevent unauthorized access.
+Using .env file to create environment variable to store and secure database credintial.
 
-8.User Authentication and Authorization:
-
-Implements user authentication to control access to the backend system.
-Defines roles and permissions to restrict certain operations based on user privileges.
-
-9.Reporting and Analytics:
-
-Provides a reporting module to generate insights into subscriber trends, growth, and demographics.
-Incorporates analytics tools or APIs for in-depth data analysis.
-
-10.Documentation:
+7.Documentation:
 
 Maintains comprehensive documentation for developers, outlining API endpoints, data structures, and usage guidelines.
 Includes sample code and examples to facilitate easy integration for other applications.
